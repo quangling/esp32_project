@@ -1,0 +1,13 @@
+T?o file key và csr b?ng git bash
+
+Generate a private key:
+
+openssl genrsa -out client.key
+Generate the CSR:
+
+openssl req -out client.csr -key client.key -new
+
+T?o file crt b?ng trang web:https://test.mosquitto.org/ssl/index.php
+
+OTA s? t?o ra 2 vùng nh? 1 là vùng app cu dang ch?y và mu?n update thì s? update vào vùng nh? app 2
+và sau dó nó s? ch?y ? vùng nh? app2
